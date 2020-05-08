@@ -22,7 +22,7 @@ const products = [
     {
         id: 3,
         name: "mango",
-        price: 3 ,
+        price: 3,
         amount: 30,
         image: '/Products/54522547-mango-cubes-and-mango-fruit-isolated-on-a-white-background-.jpg',
         text: 'Mangoes are tropical stone fruits, plump and oval in shape and about the size of a grapefruit. They have an inedible skin that ranges in colour from yellow to green through to red-green, depending on the variety, whilst inside is a soft, edible yellow flesh and a hard inedible stone'
@@ -31,7 +31,7 @@ const products = [
     {
         id: 4,
         name: "banana",
-        price: 3.5 ,
+        price: 3.5,
         amount: 15,
         image: '/Products/42E9as7NaTaAi4A6JcuFwG-320-80.jpg',
         text: 'Food & Drinks7 Wonderful Benefits Of Banana: How To Include The Fruit In Your Daily Diet\n' +
@@ -42,34 +42,57 @@ const products = [
 
 ]
 
-const initialState = {
-    products:products,
-    cart:[]
+let initialState
+if (!localStorage.getItem('state')) {
+    initialState = {
+        products: products,
+        cart: [],
+        total: 0,
+        message: ''
+    }
+} else {
+    initialState = JSON.parse(localStorage.getItem('state'))
 }
 
-const Reducer = (state= initialState, action) => {
+const Reducer = (state = initialState, action) => {
+    let newState
     switch (action.type) {
         case Add_Product_Cart : {
-            return{
+
+            let total = 0
+            state.cart.forEach((product) => {
+                total += product.price
+            })
+
+            localStorage.setItem('state', state)
+
+            newState = {
                 ...state,
                 cart: [
                     ...state.cart,
-                     action.payload.product
+                    action.payload.product
                 ]
+                ,
+                total: total
             }
+            break
         }
 
         case Pay_Cart: {
-            return {
+            newState = {
                 ...state,
                 cart: []
             }
+            break
         }
 
         default:
-            return state
+            newState = state
 
     }
+    localStorage.setItem('state', JSON.stringify(newState))
+
+    return newState
 
 }
-export default  Reducer;
+export default Reducer;
