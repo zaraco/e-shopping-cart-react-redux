@@ -6,7 +6,7 @@ const products = [
         name: "parsley",
         price: 8,
         amount: 20,
-        image: '/italian-parsley-leaves.jpg',
+        image: '/Products/italian-parsley-leaves.jpg',
         text: 'We believe that health information should be free to everyone and we rely on advertising to make this possible on our family of websites: Healthline, Medical News Today, Greatist, and Everyday Family.'
     },
 
@@ -15,7 +15,7 @@ const products = [
         name: "basil",
         price: 10,
         amount: 10,
-        image: '/Preserve-Fresh-Basil.jpg',
+        image: '/Products/Preserve-Fresh-Basil.jpg',
         text: 'Basil is an herb in the mint family. It adds flavor to meals, and its nutrients may provide health benefits.'
     },
 
@@ -24,7 +24,7 @@ const products = [
         name: "mango",
         price: 3 ,
         amount: 30,
-        image: '/54522547-mango-cubes-and-mango-fruit-isolated-on-a-white-background-.jpg',
+        image: '/Products/54522547-mango-cubes-and-mango-fruit-isolated-on-a-white-background-.jpg',
         text: 'Mangoes are tropical stone fruits, plump and oval in shape and about the size of a grapefruit. They have an inedible skin that ranges in colour from yellow to green through to red-green, depending on the variety, whilst inside is a soft, edible yellow flesh and a hard inedible stone'
     },
 
@@ -33,7 +33,7 @@ const products = [
         name: "banana",
         price: 3.5 ,
         amount: 15,
-        image: '/42E9as7NaTaAi4A6JcuFwG-320-80.jpg',
+        image: '/Products/42E9as7NaTaAi4A6JcuFwG-320-80.jpg',
         text: 'Food & Drinks7 Wonderful Benefits Of Banana: How To Include The Fruit In Your Daily Diet\n' +
             '7 Wonderful Benefits Of Banana: How To Include The Fruit In Your Daily DietPlavaneeta Borah, NDTV  |  Updated: August 20, 2018 12:08 ISTTweeterfacebookReddit\n' +
             '7 Wonderful Benefits Of Banana: How To Include The Fruit In Your Daily Diet\n' +
@@ -66,6 +66,10 @@ const Reducer = (state= initialState, action) => {
             }
         }
 
+        default:
+            return state
+
     }
+
 }
 export default  Reducer;
