@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 
-class CartShow extends  Component{
+class Product extends  Component{
     constructor() {
         super();
     }
@@ -13,4 +13,4 @@ class CartShow extends  Component{
     }
 }
 
-export default CartShow;
+export default Product;

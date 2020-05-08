@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import {
     Badge,
@@ -16,9 +17,14 @@ import {
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faShoppingCart} from '@fortawesome/free-solid-svg-icons'
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
-import Home from "./Component/Home";
 import {Provider} from "react-redux";
 import store from './Redux/Store'
+import Home from "./Component/Home";
+import Products from "./Component/Products";
+import Product from "./Component/Product";
+import CartShow from "./Component/CartShow";
+import Contact from "./Component/Contact";
+
 
 class App extends Component {
     constructor(props) {
@@ -70,10 +76,10 @@ class App extends Component {
                                     <Router>
                                         <Switch>
                                             <Route path='/home' component={Home}/>
-                                            {/* <Route path='/products' component={Products}/>
-                                <Route path='/cart' component={CartShow}/>
-                                <Route path='/contact' component={Contact}/>
-                                <Route path='/product/:id' component={Product}/>*/}
+                                            <Route path='/products' component={Products}/>
+                                            <Route path='/cart' component={CartShow}/>
+                                            <Route path='/contact' component={Contact}/>
+                                            <Route path='/product/:id' component={Product}/>
 
                                         </Switch>
                                     </Router>
