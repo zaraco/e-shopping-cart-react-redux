@@ -47,7 +47,7 @@ const initialState = {
     cart:[]
 }
 
-const reducer = (state= initialState, action) => {
+const Reducer = (state= initialState, action) => {
     switch (action.type) {
         case Add_Product_Cart : {
             return{
@@ -68,3 +68,4 @@ const reducer = (state= initialState, action) => {
 
     }
 }
+export default  Reducer;
