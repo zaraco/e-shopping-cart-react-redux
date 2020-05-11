@@ -1,21 +1,30 @@
-import {Add_Product_Cart, Pay_Cart} from "./Types";
+import {Add_Product_Cart, Pay_Cart, Search_Products} from "./Types";
 
 
 export const addProduct = product => {
-    return{
+    return {
         type: Add_Product_Cart,
         payload: {
-            product : product
+            product: product
         }
     }
 }
 
 export const payCart = () => {
-    return{
+    return {
         type: Pay_Cart,
-        payCart: {
+        payCart: {}
+    }
+}
 
+
+export const searchProducts = search => {
+    return {
+        type: Search_Products,
+        payload: {
+            search: search
         }
     }
 }
+
 

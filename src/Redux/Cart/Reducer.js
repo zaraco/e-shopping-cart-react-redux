@@ -1,4 +1,4 @@
-import {Add_Product_Cart, Pay_Cart} from "./Types";
+import {Add_Product_Cart, Pay_Cart, Search_Products} from "./Types";
 
 const products = [
     {
@@ -48,7 +48,10 @@ if (!localStorage.getItem('state')) {
         products: products,
         cart: [],
         total: 0,
-        message: ''
+        message: '',
+        filtered: [],
+        search:''
+
     }
 } else {
     initialState = JSON.parse(localStorage.getItem('state'))
@@ -82,6 +85,22 @@ const Reducer = (state = initialState, action) => {
             newState = {
                 ...state,
                 cart: []
+            }
+            break
+        }
+
+        case Search_Products: {
+            let filtered = []
+            state.products.forEach((product) => {
+                if (product.name.toLowerCase().includes(action.payload.search.toLowerCase())) {
+                    filtered.push(product)
+                }
+            })
+            console.log(filtered)
+            newState = {
+                ...state,
+                search: action.payload.search,
+                filtered: filtered
             }
             break
         }

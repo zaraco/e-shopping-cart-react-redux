@@ -24,6 +24,8 @@ import Products from "./Component/Products";
 import Product from "./Component/Product";
 import CartShow from "./Component/CartShow";
 import Contact from "./Component/Contact";
+import Filtered from "./Component/Filtered";
+
 
 
 class App extends Component {
@@ -32,6 +34,8 @@ class App extends Component {
     }
 
     render() {
+
+
         return (
             <Provider store={store}>
                 <>
@@ -60,18 +64,11 @@ class App extends Component {
                                             <div style={{marginRight: "30px", fontSize: "2em"}}>
                                                 <FontAwesomeIcon icon={faShoppingCart}/>
                                             </div>
+                                            <Filtered/>
 
-                                            <Form inline>
-                                                <FormControl type="text" placeholder="Search" className="mr-sm-2"
-                                                             onChange={this.changeHandlerSearch}/>
-                                            </Form>
                                         </Navbar.Collapse>
                                     </Navbar>
-                                    <div style={{position: "absolute", top: "140px", right: "140px", zIndex: "40"}}>
-                                        {/*   <ListGroup>
-                                {productsFilter}
-                            </ListGroup>*/}
-                                    </div>
+
                                     <br/>
                                     <Router>
                                         <Switch>
@@ -93,4 +90,9 @@ class App extends Component {
     }
 }
 
+
+
+
+
 export default App;
+
