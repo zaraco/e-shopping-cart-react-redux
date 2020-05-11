@@ -43,7 +43,7 @@ class CartShow extends Component {
                     {total}
                     <tr>
                         <td style={{color: 'red', fontWeight: 'bold'}}>total</td>
-                        <td>{this.props.total}</td>
+                        <td>{this.props.total} €</td>
                         <td></td>
 
                     </tr>

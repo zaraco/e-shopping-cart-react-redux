@@ -13,7 +13,9 @@ export const addProduct = product => {
 export const payCart = () => {
     return {
         type: Pay_Cart,
-        payCart: {}
+        payload: {
+            payCart: {}
+        }
     }
 }
 

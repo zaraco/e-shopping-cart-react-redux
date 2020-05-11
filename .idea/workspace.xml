@@ -2,12 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3004ffd8-8fde-4404-ac87-b3ba53e4350b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Component/CartShow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Component/CartShow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Cart/Actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Cart/Actions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/Cart/Reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Cart/Reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/Cart/Types.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/Cart/Types.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="e-shopping-cart-react-redux" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -63,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1588925448928</updated>
       <workItem from="1588925451020" duration="19546000" />
-      <workItem from="1589184075577" duration="11632000" />
+      <workItem from="1589184075577" duration="15153000" />
     </task>
     <servers />
   </component>
@@ -75,21 +82,21 @@
       <screen x="0" y="23" width="1440" height="831" />
     </state>
     <state x="483" y="248" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.831@0.23.1440.831" timestamp="1588927700869" />
-    <state width="1419" height="244" key="GridCell.Tab.0.bottom" timestamp="1589208682273">
+    <state width="1419" height="244" key="GridCell.Tab.0.bottom" timestamp="1589212257641">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1589208682273" />
-    <state width="1419" height="244" key="GridCell.Tab.0.center" timestamp="1589208682272">
+    <state width="1419" height="244" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1589212257641" />
+    <state width="1419" height="244" key="GridCell.Tab.0.center" timestamp="1589212257640">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1589208682272" />
-    <state width="1419" height="244" key="GridCell.Tab.0.left" timestamp="1589208682271">
+    <state width="1419" height="244" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1589212257640" />
+    <state width="1419" height="244" key="GridCell.Tab.0.left" timestamp="1589212257639">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1589208682271" />
-    <state width="1419" height="244" key="GridCell.Tab.0.right" timestamp="1589208682272">
+    <state width="1419" height="244" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1589212257639" />
+    <state width="1419" height="244" key="GridCell.Tab.0.right" timestamp="1589212257640">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1419" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1589208682272" />
+    <state width="1419" height="244" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1589212257640" />
   </component>
 </project>

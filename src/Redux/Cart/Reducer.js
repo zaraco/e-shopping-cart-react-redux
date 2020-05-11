@@ -55,6 +55,9 @@ if (!localStorage.getItem('state')) {
     }
 } else {
     initialState = JSON.parse(localStorage.getItem('state'))
+    initialState.message = ''
+    initialState.search = ''
+    initialState.filtered = []
 }
 
 const Reducer = (state = initialState, action) => {
@@ -85,6 +88,7 @@ const Reducer = (state = initialState, action) => {
             newState = {
                 ...state,
                 cart: [],
+                total: 0,
                 message: 'paid successfully'
             }
             break
@@ -97,7 +101,7 @@ const Reducer = (state = initialState, action) => {
                     filtered.push(product)
                 }
             })
-            console.log(filtered)
+            //console.log(filtered)
             newState = {
                 ...state,
                 search: action.payload.search,
