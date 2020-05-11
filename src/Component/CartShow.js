@@ -58,7 +58,9 @@ class CartShow extends Component {
 
 const mapStateToProps = (state) => {
     return{
-        cart: state.cart
+        cart: state.cart,
+        total: state.total,
+        message:state.message
     }
 }
 

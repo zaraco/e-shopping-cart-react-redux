@@ -25,6 +25,8 @@ import Product from "./Component/Product";
 import CartShow from "./Component/CartShow";
 import Contact from "./Component/Contact";
 import Filtered from "./Component/Filtered";
+import BadgeCart from "./Component/BadgeCart";
+
 
 
 
@@ -57,8 +59,7 @@ class App extends Component {
                                             <Nav className="mr-auto">
                                                 <Nav.Link href="/home">Home</Nav.Link>
                                                 <Nav.Link href="/products">Products</Nav.Link>
-                                                <Nav.Link href="/cart">Cart <Badge
-                                                    variant="info">{this.props.cart ? this.props.cart.length : 0}</Badge></Nav.Link>
+                                                <Nav.Link href="/cart">Cart<BadgeCart/></Nav.Link>
                                                 <Nav.Link href="/Contact">Contact</Nav.Link>
                                             </Nav>
                                             <div style={{marginRight: "30px", fontSize: "2em"}}>
