@@ -84,7 +84,8 @@ const Reducer = (state = initialState, action) => {
         case Pay_Cart: {
             newState = {
                 ...state,
-                cart: []
+                cart: [],
+                message: 'paid successfully'
             }
             break
         }
